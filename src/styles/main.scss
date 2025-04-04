@@ -1,0 +1,45 @@
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom right, #45C270, #21CDC3);
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #45C270;
+  }
+}
+
+button:first-of-type {
+  margin-right: 10px;
+}
+
+.error-caption {
+  font-size: small;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.history-table {
+  height: calc(100vh - 120px) !important;
+  width: calc(100vw - 120px) !important;
+
+}
